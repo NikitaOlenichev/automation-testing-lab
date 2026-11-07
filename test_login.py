@@ -68,7 +68,7 @@ def test_product_is_displayed_in_cart(page: Page):
     )
 
     expect(
-        page.locator('[data-test="inventory-item-name"]')
+        page.locator('[data-test="cart-list"] [data-test="inventory-item-name"]')
     ).to_have_text("Sauce Labs Backpack")
 
 
